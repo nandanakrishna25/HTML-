@@ -1,0 +1,50 @@
+
+1.<article>
+  To specify a block of content.
+  Used for blogs or articles.
+  <div>
+    
+2.<dialog>
+  An interactive component or a dialog box.
+  Used for pop up alerts,subwindow.
+  <div> or <span>
+  
+3.<figure>       
+  To illustrate figure or image related to the content displayed.
+  <img> or <div>
+
+4.<figcaption>       
+  Defines a caption for a figure.
+  <p>
+
+5.<footer>
+  Contains content that is to be displayed at the very end of the page.
+  <div>
+
+6.<header>      
+  Contains title and heading info related to the page.
+  <div>
+
+7.<hgroup>
+  A group of headings.
+  <div>
+
+8.<main>
+  Groups the main or important content of a page.
+  <div>
+    
+9.<mark>
+  To highlight text.
+  <span>
+    
+10.<nav>
+   Navigation bar of a page.
+   <ul>
+
+11.<section>
+   Groups a section of related content in a page.
+   <div>  
+
+12.<meter>
+   Scalar measurement with min and max values.
+   <progress>
