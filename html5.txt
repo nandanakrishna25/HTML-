@@ -48,4 +48,4 @@
 12.<meter>
    Scalar measurement with min and max values.
    <progress>
-   optimum-optimal value
+   min,max,low,high,,value,optimum
