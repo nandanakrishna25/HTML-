@@ -49,3 +49,27 @@
    Scalar measurement with min and max values.
    <progress>
    min,max,low,high,,value,optimum
+
+13.<aside>
+   Contains related content 
+   Side panels
+   Article related content
+   <div>
+
+14.<details>
+   Creates a drop down 
+   Contains extra information which user can click and obtain if needed
+   Interactive
+   open
+
+15.<summary>
+   Used in details tag 
+   Title of summary
+
+16.<output>
+   Result of an operation
+   for,name,form
+
+17.<time>
+   Indicated time and date
+   datetime
