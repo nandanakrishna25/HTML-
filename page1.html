@@ -4,35 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page 1</title>
+    <!-- ext CSS -->
+    <link href="page1.css" rel="stylesheet"/> 
 </head>
 <body>
-    <style>
+    <!-- internal CSS -->
+    <style>       
         img{height:100px;}
     </style>
+
     <nav>Click <a href="https://www.w3schools.com/html/">here</a> for more information.
-        <a href="html5.html">Go back</a></nav>
+        <a href="html5.html">Go back</a></nav> <hr>
+
     <main>
     <section><article>
-        <hgroup>
-          <header> <h1>HTML 5</h1> </header>
+        <hgroup> 
+            <!-- in-line CSS -->
+          <header> <h1 style="color: brown;">HTML 5</h1> </header>
             <h3>Semantic tags</h3>
         </hgroup>
-        <p>Tags that indicate the <mark>meaning</mark> of the content contained in them.</p></article>
-        <aisde>This is more information about semantic tags</aisde>
+        <p class="para">Tags that indicate the <mark>meaning</mark> of the content contained in them.</p>
+       </article><hr>
+
+        <aisde>This is more information about semantic tags
         <details><summary>HTML</summary>
         <p>Hypertext markup language</p></details>
-    </section>
-        </main>
+        </aisde><hr>
 
+    </section>
+
+        </main>
         <section><figure>
             <img src="image2.jpg" alt="Mountain">
             <figcaption>Mountain</figcaption>
-           <p>Height of mountain: <meter value="500" min="200" max="900" optimum="100" low="350" high="750"></meter></p>
+           <p class="para">Height of mountain: <meter value="500" min="200" max="900" optimum="100" low="350" high="750"></meter></p>
         </figure>
-        
         <output name="result" for="a b"></output>
         <time datetime="12-02-2004 12:00">12 Feb</time>
-    </section>
+    </section> <hr>
     
         <section> <dialog open>
             <p>Learn more?</p>
@@ -40,8 +49,88 @@
             <button>No</button> 
         </dialog> </section>
 
+        <section>
+            <form action="result.php" method="GET" > <h3>This is a Form</h3>
+                <label for="Mr.">Mr.</label>
+                <input type="radio" name="title" value="Mr." id="Mr.">
+                <label for="Ms.">Ms.</label>
+                <input type="radio" name="title" value="Ms." id="Ms."><br>
+                
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="NAME" required> <br>
+                <label for="age">Age: </label>
+                <input type="number" id="age" name="age" min="2" max="101" value="5"> <br>
+                <label for="language">Language:</label>
+                <select id="payment" name="payment">
+                    <option>English</option>
+                    <option>Hindi</option>
+                </select> <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" maxlength="10" required> <br>
+                <label for="confirm">Confirm password</label>
+                <input type="checkbox" id="confirm" name="confirm" required> <br>
+                <input type="reset"> 
+                <input type="submit" value="submit"> 
+            </form> <hr>
+        </section>
+            
+        <div>
+            <h3>Unordered list:</h3>
+            <ul id="list">
+                <li>Hi</li>
+                <li>There</li>
+            </ul>
+        
+            <h3>Ordered list:</h3>
+            <ol type="I">
+                <li>Hi</li>
+                <li>There</li>
+                <ul>
+                    <li>A</li>
+                    <li>Nested</li>
+                    <li>List</li>
+                </ul>
+            </ol>
+        
+            <h3>Description list:</h3>
+            <dl>
+                <dt>Term1</dt>
+                <dd>Description1</dd>
+                <dt>Term2</dt>
+                <dd>Description2</dd>
+            </dl>
+        </div> <hr>
+        
+        <section>
+            <p>Start a table</p>
+            <table>
+                <caption>Table</caption>
+                <thead>
+                <tr>
+                    <th colspan=2>Date</th>
+                    <th>Day</th>
+                </tr> 
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan=2>23/05/22</td>
+                    <td>Monday</td>
+                </tr>
+                <tr>
+                    <td colspan=2>02/11/24</td>
+                    <td>Wednesday</td>
+                </tr>
+            </tbody>
+            </table>
+            <p>End a table</p>
+        </section><hr>
+
         <section><footer>
-          This is a footer @copy</footer>
+          This is a footer 
+          <p class="para2">Contact me?
+          <p>hyuo@gmail.com</p>
+          </p>
+          &copy;</footer>
         </section>
 
      

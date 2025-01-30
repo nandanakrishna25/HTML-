@@ -1,0 +1,64 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3::first-letter{
+    color: rgb(197, 116, 18);
+}
+
+table{
+    border: 2px solid black;
+    color: rgb(143, 209, 36) !important;
+}
+
+.para{
+    color: blueviolet;
+}
+
+#list{
+    text-decoration:underline;
+}
+
+/* pseudo class */
+li:first-child{
+    color: aqua;
+}
+
+footer p{
+    text-shadow: 2px 2px 5px red;
+}
+
+table+p{
+    color: blue;
+}
+
+footer .para2{
+    text-decoration: underline;
+}
+
+button:hover{
+    color: rgb(236, 58, 227);
+}
+
+nav::after{
+    content: "See more?";
+    border:1px rgb(182, 33, 33) dotted;
+    position: absolute;
+    right:20px
+}
+
+a:visited{
+    color: rgb(226, 43, 153);
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    color:red;
+}
+
+table,form,ol,ul{
+    color: rgb(131, 89, 171);
+}
