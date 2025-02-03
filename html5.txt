@@ -75,5 +75,11 @@
    datetime
 
 18.<audio>
-   
+   Play audio without ext plug in
+   autoplay,controls,muted,loop,preload
+   <embed> <object>
+
 19.<video>
+   Play video without ext plug ins
+   controls,poster,muted,height,width,loop,preload,autoplay
+   <embed> <object>
