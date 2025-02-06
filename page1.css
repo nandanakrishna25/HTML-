@@ -1,4 +1,8 @@
 /* selectors */
+html {
+    font-size: 62.5%; /* 1rem = 10px (62.5% of default 16px) */
+  }
+
 *{
  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -12,7 +16,7 @@ li:first-child{
 }
 
 table{
-    border: 2px solid black;
+    border: 0.2rem solid black;
     color: rgb(143, 209, 36) !important;
 }
 
@@ -108,11 +112,11 @@ P:not(.nes){
 }
 
 .box2{
-    border: 1px solid black;
+    border: 0.2rem solid black;
     background-color: rgb(118, 118, 196);
     box-sizing:content-box;
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    margin: 20px;
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+    margin: 2rem;
 }
