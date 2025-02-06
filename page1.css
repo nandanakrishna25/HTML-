@@ -1,9 +1,14 @@
+/* selectors */
 *{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-h3::first-letter{
+h3:first-letter{
     color: rgb(197, 116, 18);
+}
+
+li:first-child{
+    color: aqua;
 }
 
 table{
@@ -19,11 +24,6 @@ table{
     text-decoration:underline;
 }
 
-/* pseudo class */
-li:first-child{
-    color: aqua;
-}
-
 footer p{
     text-shadow: 2px 2px 5px red;
 }
@@ -36,15 +36,15 @@ footer .para2{
     text-decoration: underline;
 }
 
-button:hover{
-    color: rgb(236, 58, 227);
-}
-
 nav::after{
     content: "See more?";
     border:1px rgb(182, 33, 33) dotted;
     position: absolute;
     right:20px
+}
+
+button:hover{
+    color: rgb(236, 58, 227);
 }
 
 a:visited{
@@ -61,4 +61,38 @@ a:active{
 
 table,form,ol,ul{
     color: rgb(131, 89, 171);
+}
+
+div p{
+    color: brown;
+}
+
+div>p{
+    color: rgb(99, 42, 165);
+}
+
+div+p{
+    background-color: bisque;
+}
+
+div~p{
+    text-decoration: line-through;
+}
+
+input[type="text"]{
+    background-color: blue;
+}
+
+/* starts with https */
+a[href^="https"]{
+    background-color: rgb(172, 201, 93);
+}
+
+/* contains https */
+a[href*="https"] {
+    text-decoration: line-through;
+}
+
+P:not(.nes){
+    background-color: blanchedalmond;
 }
