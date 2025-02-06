@@ -96,3 +96,23 @@ a[href*="https"] {
 P:not(.nes){
     background-color: blanchedalmond;
 }
+
+.box1{
+    border: 1px solid black;
+    background-color: rgb(118, 118, 196);
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.box2{
+    border: 1px solid black;
+    background-color: rgb(118, 118, 196);
+    box-sizing:content-box;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+}
