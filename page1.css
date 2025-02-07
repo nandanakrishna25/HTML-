@@ -29,7 +29,7 @@ table{
 }
 
 footer p{
-    text-shadow: 2px 2px 5px red;
+    text-shadow: 0.2rem 0.2rem 0.5rem red;
 }
 
 table+p{
@@ -42,9 +42,9 @@ footer .para2{
 
 nav::after{
     content: "See more?";
-    border:1px rgb(182, 33, 33) dotted;
+    border:0.1px rgb(182, 33, 33) dotted;
     position: absolute;
-    right:20px
+    right:2rem;
 }
 
 button:hover{
@@ -97,26 +97,87 @@ a[href*="https"] {
     text-decoration: line-through;
 }
 
-P:not(.nes){
+p:not(.nes){
     background-color: blanchedalmond;
 }
 
 .box1{
-    border: 1px solid black;
+    border: 0.2rem solid black;
     background-color: rgb(118, 118, 196);
     box-sizing: border-box;
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    margin: 20px;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    margin: 2rem;
 }
 
 .box2{
     border: 0.2rem solid black;
     background-color: rgb(118, 118, 196);
     box-sizing:content-box;
-    width: 20rem;
-    height: 20rem;
+    width: 10rem;
+    height: 10rem;
     padding: 1rem;
     margin: 2rem;
+}
+
+.units{
+    border: 0.2rem solid rgb(0, 0, 0);
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.per{
+    height: 20%;
+    width: 20%;
+    background-color: rgb(241, 14, 14);
+}
+.px{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(241, 14, 14);
+}
+.rem{
+    height: 20rem;
+    width: 20rem;
+    background-color: rgb(241, 14, 14);
+}
+.em{
+    height: 20em;
+    width: 20em;
+    background-color: rgb(241, 14, 14);
+}
+.vw-vh{
+    height: 20vh;
+    width: 20vw;
+    background-color: rgb(241, 14, 14);
+}
+
+.flex{
+    border: 0.2rem solid rgb(0, 0, 0);
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: aquamarine;
+}
+
+.flex-r{
+    display: flex;
+    height: fit-content;
+    width: 80vw;
+    background-color: brown;
+    border: 0.3rem black solid;
+    margin: 1rem;
+}
+
+.item1{
+    border: 0.2rem solid rgb(0, 0, 0);
+    height: 2rem;
+    width: 3rem;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: beige;
 }
