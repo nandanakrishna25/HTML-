@@ -41,13 +41,33 @@
         </figure>
         <output name="result" for="a b"></output>
         <time datetime="12-02-2004 12:00">12 Feb</time>
+        <audio controls muted >
+            <source src="audio.opus" type="audio/ogg">
+            audio not supported
+          </audio> <br>
+
+          <video width="200px" height="200px" controls poster="image2.jpg">
+            <source src="video.mp4" type="video/mp4">
+            video not supported
+          </video>
     </section> <hr>
 
       <p style="position:sticky; top:0; background-color: rgb(89, 230, 174);">I am sticky</p>
-      <p style="position: relative; top:20px; background-color: rgb(98, 98, 191);">I am relative</p>
-      <p style="position: fixed; top:10%; background-color: aqua;">I am fixed</p>
-      <p style="position: absolute; top:10px; background-color: bisque;">I am absolute</p>
-      
+      <p style="position: relative; top:0.8rem; background-color: rgb(98, 98, 191);">I am relative</p>
+      <p style="position: fixed; top:33rem; background-color: aqua;">I am fixed</p>
+      <p style="position: absolute; top:1rem; background-color: bisque;">I am absolute</p>
+      <hr>
+      <p>sentance above</p>   
+        <div>
+           <h2>Test selectors</h2>
+           <p class="nes">sentance 1</p>
+           <section><p>Sentance 1.1</p></section>
+           <p>sentance 2</p>
+           <p>sentance 3</p>
+        </div>
+        <p>sentance below</p>
+        <p>sentance below 2</p><hr>
+
       <section> <dialog open>
             <p>Learn more?</p>
             <button>Yes</button>
@@ -78,17 +98,6 @@
                 <input type="submit" value="submit"> 
             </form> <hr>
         </section>
-
-        <p>sentance above</p>   
-        <div>
-           <h2>Test selectors</h2>
-           <p class="nes">sentance 1</p>
-           <section><p>Sentance 1.1</p></section>
-           <p>sentance 2</p>
-           <p>sentance 3</p>
-        </div>
-        <p>sentance below</p>
-        <p>sentance below 2</p><hr>
 
         <div>
             <h3>Unordered list:</h3>
@@ -141,20 +150,38 @@
             <p>End a table</p>
         </section><hr>
 
-        <audio controls muted >
-            <source src="audio.opus" type="audio/ogg">
-            audio not supported
-          </audio> <br>
-
-          <video width="200px" height="200px" controls poster="image2.jpg">
-            <source src="video.mp4" type="video/mp4">
-            video not supported
-          </video>
-
           <div class="box1"></div>
-          <div class="box2"></div>
+          <div class="box2"></div><hr>
 
-        <section><footer>
+          <div class="units">
+            <p style="background-color: white;">Units</p><br>
+            <div class="per units"> % </div>
+            <div class="px units" > px </div>
+            <div class="rem units" > rem </div>
+            <div class="em units"> em </div>
+            <div class="vw-vh units">vw-vh </div>
+            </div><hr>
+
+            <div class="flex">
+               <div class="flex-r" style="justify-content: space-around;">
+                <div class="item1">Item</div>
+                <div class="item1">Item</div>
+                <div class="item1">Item</div>
+            </div>
+            <div class="flex-r" style="justify-content: space-evenly;">
+                <div class="item1">Item</div>
+                <div class="item1">Item</div>
+                <div class="item1">Item</div>
+            </div>
+            <div class="flex-r" style="justify-content: space-between;">
+                <div class="item1">Item</div>
+                <div class="item1">Item</div>
+                <div class="item1">Item</div>
+            </div>
+            </div>
+
+
+        <hr><section><footer>
           This is a footer 
           <p class="para2">Contact me?
           <p>hyuo@gmail.com</p>
