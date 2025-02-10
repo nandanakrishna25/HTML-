@@ -175,9 +175,32 @@ p:not(.nes){
 
 .item1{
     border: 0.2rem solid rgb(0, 0, 0);
-    height: 2rem;
-    width: 3rem;
+    height: fit-content;
+    width: fit-content;
     padding: 1rem;
-    margin: 2rem;
     background-color: beige;
 }
+
+.grid{
+   display: grid;
+   border: 0.2rem solid rgb(0, 0, 0);
+   height: fit-content;
+   width: fit-content;
+   padding: 1rem;
+   margin: 2rem;
+   background-color: rgb(236, 214, 235);
+   grid-template-columns: 10rem 10rem 10rem 10rem 10rem;
+   grid-template-rows: 10rem 10rem 10rem 10rem 10rem 10rem ;
+   grid-auto-rows: 10rem;
+   grid-auto-flow: column;
+}
+
+.g1{
+    grid-area:1/1/3/4 ;
+    z-index: 1;
+}
+
+.g2{
+  grid-area:2/1/3/3 ;
+}
+
