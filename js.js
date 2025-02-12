@@ -46,10 +46,6 @@ let Student = {
 }
 console.log(Student);
 
-window.alert("Click OK");
-
-
-
 //object
 let obj1 = {
     name: "Sourav",
@@ -81,6 +77,18 @@ delete obj1.age;
 console.log("color" in obj1);
 console.log(obj1.hasOwnProperty("City"));
 
+//window object
+
+//window.alert("Click OK");  //Explicit
+//alert("Click OK")      //Implicit
+// window.alert(prompt())
+// if(confirm("Quit now?")){
+//     console.log("yes")
+// }
+// else{console.log("no")}
+console.log("Outer height:"+window.outerHeight)
+console.log("Inner height:"+window.innerHeight)
+console.log(window.navigator)
 
 //statements
 if (age= 15) 
