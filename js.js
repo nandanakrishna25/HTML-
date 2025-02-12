@@ -1,69 +1,88 @@
 
-//variables
 let fName="Krishna"
+console.log(age)
 var age=12,c;
 fName="Nandana"
 const height=165
-c=3;
-b=c/age;
+// var age=10
 console.log(age)
-// console.log("hi")
+c=5;
+b=c/age;
 
-// function a1(){
-//     var age=10
-//     console.log(age)
-//     let v=2
-//     let a=3
-//     const y=4
-// }
-// a1()
-// console.log(age)
 
-// // //variables
-// // "use strict"
-// // let fName="Krishna"
-// // console.log(age)
-// // var age=12,c;
-// // fName="Nandana"
-// // const height=165
-// // var age=10
-// // console.log(age)
-// // c=5;
-// // b=c/age;
-// // console.log(age)
+//functions
+function newFn(){
+    console.log(fName)
+    // var age=20
+    age=20
+    const places="tvm"
+    console.log(age+"\n" +"name:"+fName)
+}
+newFn()
+console.log(age)
+// console.log(place)
+function sum(a,b){
+    var sum=a+b;
+    return sum
+}
+console.log(sum(3,4))
 
-// // //functions
-// // function newFn(age){
-// //     console.log(fName)
-// //     age=20
-// //     const places="tvm"
-// //     console.log(age+"\n" +"name:"+fName)
-// // }
-// // newFn()
-// // console.log(age)
-// // // console.log(place)
+//datatypes
+let i;
+console.log(i); 
+let empty = null;
+console.log(empty); 
+let sym = Symbol('unique');
+console.log(sym); 
 
-// // //datatypes
-// // let i;
-// // console.log(i); 
-// // let empty = null;
-// // console.log(empty); 
-// // let sym = Symbol('unique');
-// // console.log(sym); 
+let places= ["GFG", "Computer", "Hello"];
+console.log(places);
 
-// // let places= ["GFG", "Computer", "Hello"];
-// // console.log(places);
+let Student = {
+    firstName: "Johnny",
+    lastName: "Diaz", 
+    age: 35, 
+    mark: "blueEYE"
+}
+console.log(Student);
 
-// // let Student = {
-// //     firstName: "Johnny",
-// //     lastName: "Diaz", 
-// //     age: 35, 
-// //     mark: "blueEYE"
-// // }
-// // console.log(Student);
+window.alert("Click OK");
 
-// // window.alert("Click OK");
 
+
+//object
+let obj1 = {
+    name: "Sourav",
+    age: 20,
+    job: "Student",
+    hello:function (){
+        console.log(`hello ${this.name}`)
+    }
+};
+console.log(obj1);
+obj1.hello()
+
+let obj2 = new Object();
+obj2.name= "Sanvi",
+obj2.age= 27,
+obj2.job= "Teacher"
+obj2.hello=function (){
+    console.log("hi")
+}
+console.log(obj2);
+obj2.hello()
+
+console.log(obj1.name);
+console.log(obj1["age"]);
+obj1.age = 18;
+obj1 = { City: "Tvm" };
+console.log(obj1)
+delete obj1.age;
+console.log("color" in obj1);
+console.log(obj1.hasOwnProperty("City"));
+
+
+//statements
 if (age= 15) 
     console.log("Age is 15");
 else if(age>15)
@@ -94,27 +113,3 @@ for (let i = 0; i < 10; i++) {
     if (i % 2 == 0) break;
     console.log(i);
 }
-
-let obj = {
-    name: "Sourav",
-    age: 20,
-    job: "Student"
-};
-console.log(obj);
-
-let obj2 = new Object();
-obj.name= "Sanvi",
-obj.age= 27,
-obj.job= "Teacher"
-
-console.log(obj);
-
-console.log(obj.name);
-console.log(obj["age"]);
-obj.age = 18;
-console.log(obj);
-let obj = { City: "Tvm" };
-console.log(obj)
-delete obj.age;
-console.log("color" in obj);
-console.log(obj.hasOwnProperty("City"));
